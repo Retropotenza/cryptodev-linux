@@ -88,7 +88,8 @@ enum cryptodev_crypto_op_t {
 	ENUM_CRYPTO_ALGORITHM_ALL, /* Keep updated - see below */
 };
 
-#define	CRYPTO_ALGORITHM_MAX	(ENUM_CRYPTO_ALGORITHM_ALL - 1)
+#define	CRYPTO_ALGORITHM_ALL	ENUM_CRYPTO_ALGORITHM_ALL
+#define	CRYPTO_ALGORITHM_MAX	(CRYPTO_ALGORITHM_ALL - 1)
 
 /* Values for ciphers */
 #define DES_BLOCK_LEN		8
